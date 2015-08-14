@@ -1,2 +1,15 @@
-<h1>Pages#main</h1>
-<p>Find me in app/views/pages/main.html.erb</p>
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+  <div class="center jumbotron">
+    <head>
+      <title><%= yield(:title) %> | Bruno</title>
+    </head>
+    <body>
+      <h1>Bruno#!</h1>
+      <p>
+        Bruno is a grumpy rooster. "How grumpy?" you ask?....stay tuned.
+      </p>
+    </body>
+  </div>
+</html>

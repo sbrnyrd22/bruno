@@ -1,2 +1,13 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<% provide(:title, "About")%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Bruno</title>
+  </head>
+  <body>
+    <h1>About</h1>
+    <p>
+      This site is all about Bruno and his grumpiness. Bruno lives on Sugarbean Farm in Hillsborough, North Carolina. He lives with 65 hens. 'Nuff said.
+    </p>
+  </body>
+</html>
